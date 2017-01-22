@@ -1,0 +1,138 @@
+[
+  {
+    "type": "öl",
+    "name": "Carlsberg",
+    "description": "Maltig smak med inslag av citrus, ljust bröd och honung. Serveras vid 8-10°C till husmanskost, eller som sällskapsdryck.",
+    "alcohol": 4.2,
+    "price": 12,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/vdho2goywjdp5wglgug5/905205.jpg"
+  },
+  {
+    "type": "öl",
+    "name": "Tuborg",
+    "description": "Brödig smak med inslag av ljus sirap, örter och citrus. Serveras vid 8-10°C som sällskapsdryck eller till husmanskost.",
+    "alcohol": 4.2,
+    "price": 9,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/cv7fn492r1q8sui129a1/507811.jpg"
+  },
+  {
+    "type": "öl",
+    "name": "Corona",
+    "description": "Brödig smak med inslag av citrus och örter. Serveras vid 8-10°C till kryddstarka rätter.",
+    "alcohol": 4.5,
+    "price": 18,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/8371430khnxi4gjilzr9/1194.jpg"
+  },
+  {
+    "type": "öl",
+    "name": "Newcastle",
+    "description": "Knäckig smak med inslag av pomerans, torkad frukt och sirapslimpa. Serveras vid 8-10°C som sällskapsdryck eller till smakrik husmanskost.",
+    "alcohol": 4.7,
+    "price": 16,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/pcdgmnegrsmdhf0d6zmz/1134.jpg"
+  },
+  {
+    "type": "öl",
+    "name": "Sofiero",
+    "description": "Maltig smak med inslag av ljust bröd, halm och citrus. Serveras vid 8-10°C till husmanskost eller som sällskapsdryck.",
+    "alcohol": 5.2,
+    "price": 8,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/4qzru0xkkhuome0hpyk1/758145.jpg"
+  },
+  {
+    "type": "öl",
+    "name": "Falcon",
+    "description": "Brödig smak med inslag av honung, aprikos och citrus. Serveras vid 8-10°C till husmanskost eller som sällskapsdryck.",
+    "alcohol": 5.2,
+    "price": 10,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/17685o8unij03kwhzb7l/507758.jpg"
+  },
+  {
+    "type": "öl",
+    "name": "Staropramen",
+    "description": "Maltig smak med liten sötma, inslag av knäckebröd, torkade aprikoser, örter och apelsinskal. Serveras vid cirka 10°C till husmanskost eller som sällskapsdryck.",
+    "alcohol": 5,
+    "price": 17,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/podtnof0fkvj35q16tar/1206.jpg"
+  },
+  {
+    "type": "vin",
+    "name": "Lindemans",
+    "description": "Mycket fruktig smak med inslag av fat, galiamelon, persika, gula päron, citrus och vanilj. Serveras vid cirka 8°C till fiskrätter eller ljust kött.",
+    "alcohol": 13.5,
+    "price": 80,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/hkp0u7y69ei9lwaaow0e/1432.jpg"
+  },
+  {
+    "type": "vin",
+    "name": "Allegrini",
+    "description": "Nyanserad, kryddig smak med inslag av fat, mörka bär, kryddnejlika, choklad och vanilj. Serveras vid cirka 18°C till smakrika rätter av lamm- eller nötköt, eller till lagrade hårdostar.",
+    "alcohol": 13.5,
+    "price": 110,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/ofdtzt16v768zthwrkb6/366416.jpg"
+  },
+  {
+    "type": "vin",
+    "name": "Amore Assoluto",
+    "description": "Bärig smak med inslag av körsbär, blåbär och örter. Serveras vid cirka 16°C till rätter av ljust kött, eller till vegetariska rätter.",
+    "alcohol": 13.5,
+    "price": 90,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/pwcjkg9oaj57pp1kj85v/991120.jpg"
+  },
+  {
+    "type": "vin",
+    "name": "Barbaresco",
+    "description": "Nyanserad, kryddig smak med fatkaraktär, inslag av körsbär, hallon, kanel, rosor och pomerans. Serveras vid cirka 18°C till rätter av mörkt kött.",
+    "alcohol": 13.5,
+    "price": 200,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/ig5g6njtw3x70fgdfuxy/830942.jpg"
+  },
+  {
+    "type": "vin",
+    "name": "Biecher",
+    "description": "Fruktig smak med inslag av gula äpplen, honung, persika och mineral. Serveras vid cirka 8°C eller till rätter av fisk eller skaldjur.",
+    "alcohol": 12.5,
+    "price": 93,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/xkh12jaqqxggbjumm6zn/16465.jpg"
+  },
+  {
+    "type": "vin",
+    "name": "Calvet",
+    "description": "Nyanserad, söt smak med inslag av aprikosmarmelad, honung, saffran, röda äpplen och apelsin. Serveras vid 8-10°C till smakrika desserter eller grönmögelost.",
+    "alcohol": 13,
+    "price": 100,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/t4ukptkyz3nnzvqulo64/742604.jpg"
+  },
+  {
+    "type": "vin",
+    "name": "Chablis",
+    "description": "Nyanserad, fruktig, mycket frisk smak med inslag av gröna äpplen, gråpäron, mineral och citrus. Serveras vid 8-10°C till rätter av fisk och skaldjur.",
+    "alcohol": 12.5,
+    "price": 143,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/qb3tfaxjaqjbud4klxya/676979.jpg"
+  },
+  {
+    "type": "sprit",
+    "name": "Aberfeldy",
+    "description": "Maltig, nyanserad smak med tydlig fatkaraktär, inslag av torkad aprikoser, halm, vaniljfudge, apelsinskal, nötter, ljunghonung och kryddor. Serveras rumstempererad som avec.",
+    "alcohol": 40,
+    "price": 587,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/oaux0w6ztql21b7ko4yk/967026.jpg"
+  },
+  {
+    "type": "sprit",
+    "name": "Aberlour",
+    "description": "Nyanserad smak med fatkaraktär, inslag av päron, nötter, torkad frukt, ljunghonung, örter och apelsin. Serveras rumstempererad som avec.",
+    "alcohol": 40,
+    "price": 371,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/kab7xtfhzslmr7a0aw89/914834.jpg"
+  },
+  {
+    "type": "sprit",
+    "name": "Ardbeg",
+    "description": "Maltig, påtagligt rökig smak med fatkaraktär, inslag av päron, honung, citrusskal, halm, jod och tjära. Serveras rumstempererad.",
+    "alcohol": 46,
+    "price": 502,
+    "img": "https://static.systembolaget.se/imagelibrary/publishedmedia/x675767uxqxuh7yoadxr/32970.jpg"
+  }
+]

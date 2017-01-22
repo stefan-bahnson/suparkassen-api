@@ -1,0 +1,17 @@
+{
+  "name": "lenas-node-rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.5"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "mongod": "mongod --dbpath ./data"
+  },
+  "author": "",
+  "license": "ISC"
+}
