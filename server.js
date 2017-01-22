@@ -3,14 +3,16 @@ var app = express();
 var port = 3000;
 var mongoose = require('mongoose');
 var jsonParser = require('body-parser').json();
+
 var PrivateOrder = require('./models/privateOrder');
 var Product = require('./models/product');
 var CompanyOrder = require('./models/companyOrder');
 var companyOrderRoutes = require('./routes/company.routes');
 var privateOrderRoutes = require('./routes/private.routes');
 
+var mongoURI = 'mongodb://admin:admin@ds117189.mlab.com:17189/suparkassen';
 
-mongoose.connect('mongodb://localhost/lena');
+mongoose.connect(mongoURI);
 
 app.use(jsonParser);
 app.use(function(req, res, next) {
@@ -26,6 +28,14 @@ app.use('/api/private-orders', privateOrderRoutes);
 
 app.listen(port, function () {
     console.log('Server running on port', port);
+});
+
+app.get('/', (req, res) => {
+  res.redirect('/api')
+});
+
+app.get('/api', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/api/products', (req, res) => {
