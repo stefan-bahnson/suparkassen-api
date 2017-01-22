@@ -9,7 +9,7 @@
     "mongoose": "^4.7.5"
   },
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon server.js",
     "mongod": "mongod --dbpath ./data"
   },
   "author": "",
