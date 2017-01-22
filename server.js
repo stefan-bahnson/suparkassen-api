@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var port = 3000;
+app.set('port', (process.env.PORT || 5000));
 var mongoose = require('mongoose');
 var jsonParser = require('body-parser').json();
 
@@ -25,10 +25,6 @@ app.use(function(req, res, next) {
 
 app.use('/api/company-orders', companyOrderRoutes);
 app.use('/api/private-orders', privateOrderRoutes);
-
-app.listen(port, function () {
-    console.log('Server running on port', port);
-});
 
 app.get('/', (req, res) => {
   res.redirect('/api')
@@ -70,4 +66,8 @@ app.get('/api/products/search', (req, res) => {
                 res.json(products);
             }
         })
+});
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });

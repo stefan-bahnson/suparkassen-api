@@ -2,7 +2,10 @@
   "name": "lenas-node-rest-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "engines": {
+    "node": "6.9.2"
+  },
+  "main": "server.js",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
