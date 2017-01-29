@@ -89,6 +89,51 @@ app.get('/api/products/search', (req, res) => {
         })
 });
 
+app.post('/api/payment', (req, res) => {
+  Payment.create(req.body, (err, payment) => {
+    if (err) {
+      res.send(err)
+    } else {
+      res.json(payment);
+
+      app.use(vhost('admin.*', admin));
+
+      var mailTransport = nodemailer.createTransport('SMTP',{
+        service: 'Gmail',
+        auth: {
+          user: credentials.gmail.user,
+          pass: credentials.gmail.password,
+        }
+      });
+      mailTransport.sendMail({
+        from: '"suparkassen.se" <kervmejj@gmail.com>',
+        to: payment.email,
+        subject: 'Orderbekräftelse från suparkassen',
+        html: "<h4>Ordernummer: " + orderId + "</h4>" +
+        "<h3>Tack " + payment.firstname + " " + payment.lastname + " för din beställning!</h3>" +
+        "<h4>Du har handlat för: " + payment.totalprice + "kr</h4>" +
+        "<p>Ha en fortsatt trevlig dag önskar vi på Suparkassen!</p>",
+        text: ''
+      }, function(err){
+        if(err) console.error( 'Unable to send email: ' + err );
+      }, function () {
+        console.log("mail sent to: kervmej");
+      });
+    }
+  })
+});
+
+app.get('/api/payment', (req, res) => {
+  Payment.find()
+    .exec((err, payment) => {
+      if (err) {
+        res.send(err)
+      } else {
+        res.json(payment);
+      }
+    })
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
