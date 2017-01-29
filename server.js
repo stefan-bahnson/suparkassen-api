@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var host = require('vhost');
 var credentials = require('./credentials');
+var admin = express.Router();
 
 var PrivateOrder = require('./models/privateOrder');
 var Product = require('./models/product');
@@ -109,6 +110,9 @@ app.post('/api/payment', (req, res) => {
           pass: credentials.gmail.password,
         }
       });
+
+      var orderId = Math.floor((Math.random() * 1000000) + 100000);
+
       mailTransport.sendMail({
         from: '"suparkassen.se" <kervmejj@gmail.com>',
         to: payment.email,
