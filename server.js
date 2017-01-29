@@ -27,7 +27,7 @@ app.listen(port, function () {
 });
 
 app.get('/', (req, res) => {
-  res.send('hello');
+  res.redirect('/api/products');
 });
 
 app.get('/api/products', (req, res) => {
