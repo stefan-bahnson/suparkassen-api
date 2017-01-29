@@ -5,6 +5,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var host = require('vhost');
+var credentials = require('./credentials');
 
 var PrivateOrder = require('./models/privateOrder');
 var Product = require('./models/product');
