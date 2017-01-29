@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 
 var PrivateOrder = require('./models/privateOrder');
 var Product = require('./models/product');
+var Payment = require('./models/payment');
 var CompanyOrder = require('./models/companyOrder');
 var companyOrderRoutes = require('./routes/company.routes');
 var privateOrderRoutes = require('./routes/private.routes');
