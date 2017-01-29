@@ -20,6 +20,7 @@ app.use(function(req, res, next) {
 
   next();
 });
+app.use(vhost('admin.*', admin));
 
 app.listen(port, function () {
   console.log('Server running on port', port);
@@ -77,8 +78,6 @@ app.post('/api/payment', (req, res) => {
       //mail skicka obj //payment.name bla till mailet payment.totalprice
       //Res???
       //"STATUS KOD" RES.SEND "201"=CREATED
-
-      app.use(vhost('admin.*', admin));
 
       var mailTransport = nodemailer.createTransport('SMTP',{
         service: 'Gmail',
