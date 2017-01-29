@@ -3,6 +3,8 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
+var nodemailer = require('nodemailer');
+var host = require('vhost');
 
 var PrivateOrder = require('./models/privateOrder');
 var Product = require('./models/product');
@@ -97,7 +99,7 @@ app.post('/api/payment', (req, res) => {
     } else {
       res.json(payment);
 
-      app.use(vhost('admin.*', admin));
+      app.use(host('admin.*', admin));
 
       var mailTransport = nodemailer.createTransport('SMTP',{
         service: 'Gmail',
